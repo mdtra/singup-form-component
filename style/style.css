@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-main:'Poppins', sans-serif;
+    --color-main-bg: hsl(0, 100%, 74%);
+    --color-button: hsl(154, 59%, 51%);
+    --color-h2-bg: hsl(248, 32%, 49%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: white;
+    background-color: var(--color-main-bg);
+    background-image: url(/images/bg-intro-desktop.png);
+}
+
+.main-section {
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 79%;
+}
+
+.section-info {
+    margin: 10px;
+    padding-top: 15%;
+    flex: 1 1;
+}
+
+.section-info > h1 {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.section-info > p {
+    margin-top: 30px;
+}
+
+.section-form {
+    margin: 10px;
+    flex: 1 1;
+}
+
+.section-form-title {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--color-h2-bg);
+    border-radius: 10px;
+    box-shadow: 0 8px 0px rgba(0, 0, 0, 0.171);
+}
+
+.section-form-title:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.section-form-title > h2 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section-form-title > h2 > span {
+    font-weight: 600;
+}
+
+.section-form-fields {
+    margin-top: 25px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.151);
+}
+
+.section-form-fields > form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.section-form-fields > form > input {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    height: 55px;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 5px;
+}
+
+.section-form-fields > form > input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.section-form-fields > form > input::placeholder {
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section-form-fields > form > button {
+    height: 50px;
+    border: none;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--color-button);
+    border-radius: 5px;
+    box-shadow: 0 5px hsl(154, 57%, 45%);
+    cursor: pointer;
+}
+
+.section-form-fields > form > button:hover {
+    background-color: hsla(154, 59%, 51%, 0.658);
+    box-shadow: 0 5px hsla(154, 57%, 45%, 0.548);
+    transition: 0.3s;
+}
+
+.section-form-fields > p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: rgb(172, 172, 172);
+}
+
+.section-form-fields > p > a {
+    font-weight: 600;
+    color: var(--color-main-bg);
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+
+    .main-section {
+        width: 90%;
+        text-align: center;
+    }
+
+    .section-info > h1{
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .section-info > p {
+        font-size: 15px;
+    }
+
+    .section-form-title {
+        margin-top: 40px;
+    }
+
+    .section-form-fields {
+        padding: 8%;
+    }
+}
