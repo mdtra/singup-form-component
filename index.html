@@ -28,7 +28,7 @@
               name="first-name" 
               placeholder="First Name" 
               required
-              oninvalid="invalidFirstName()"
+              oninvalid="this.setCustomValidity(''), invalidFirstName()"
               oninput="validFirstName()"
               >
             <span class="span-error" id="span-first-name"></span>
@@ -38,7 +38,7 @@
               name="last-name" 
               placeholder="Last Name" 
               required
-              oninvalid="invalidLastName()"
+              oninvalid="this.setCustomValidity(''), invalidLastName()"
               oninput="validLastName()"
               >
             <span class="span-error" id="span-last-name"></span>
@@ -48,7 +48,7 @@
               name="email" 
               placeholder="Email Address" 
               required
-              oninvalid="invalidEmail()"
+              oninvalid="this.setCustomValidity(''), invalidEmail()"
               oninput="validEmail()"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               >
@@ -59,9 +59,8 @@
               name="password" 
               placeholder="Password" 
               required
-              oninvalid="invalidPassword()"
+              oninvalid="this.setCustomValidity(''), invalidPassword()"
               oninput="validPassword()"
-              
               >
             <span class="span-error" id="span-password"></span>
             <button type="submit" id="button-send">Claim your free trial</button>
