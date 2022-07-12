@@ -139,6 +139,18 @@ body {
     text-decoration: none;
 }
 
+.span-error {
+    display: none;
+    margin-top: -13px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255, 1, 1, 0.699);
+    text-align: right;
+    font-style: italic;
+}
+
 @media (max-width: 375px) {
     body {
         background-image: url(/images/bg-intro-mobile.png);
